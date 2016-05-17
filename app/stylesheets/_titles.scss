@@ -1,0 +1,58 @@
+.titles {
+    position: absolute;
+    width: 18em;
+    height: 50em;
+    bottom: 0;
+    left: 50%;
+    margin-left: -9em;
+    font-size: 17vw;
+    text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    transform: perspective(99vw) rotateX(25deg);
+}
+
+.titles:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.titles p {
+    text-align: justify;
+    margin: 0.8em 0;
+}
+
+.titles p.center {
+    text-align: center;
+}
+
+.titles a {
+    color: #ff6;
+    text-decoration: underline;
+}
+
+.titlecontent {
+    position: absolute;
+    top: 100%;
+    animation: scroll 100s linear 1s infinite;
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* animation */
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -170%;
+    }
+}

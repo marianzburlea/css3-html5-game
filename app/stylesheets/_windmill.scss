@@ -1,0 +1,61 @@
+.windmill {
+    right: 0;
+    top: pxToVp(250);
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    display: inline-block;
+}
+
+.windmill-body {
+    top: pxToVp(-10);
+    left: pxToVp(-10);
+    width: 0;
+    height: 0;
+    border-bottom: pxToVp(200) solid $moon-crater;
+    border-left: pxToVp(10)solid transparent;
+    border-right: pxToVp(10)solid transparent;
+    position: absolute;
+}
+
+.windmill-head {
+    position: absolute;
+    animation: ani-windmill 2s infinite;
+    transform-origin: 0% 0%;
+}
+
+.windmill-cap {
+    background-color: $moon-bg;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: pxToVp(10) solid $moon-bg;
+    top: pxToVp(-10);
+    left: pxToVp(-10);
+}
+
+.windmill-propeller {
+    position: absolute;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: pxToVp(-6);
+        background-color: $white;
+        display: inline-block;
+        width: pxToVp(12);
+        height: pxToVp(80);
+        border-radius: pxToVp(20) / pxToVp(80);
+    }
+
+    &:nth-child(2) {
+        transform: rotate(120deg);
+    }
+
+    &:nth-child(3) {
+        transform: rotate(240deg);
+    }
+}

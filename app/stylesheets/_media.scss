@@ -1,0 +1,12 @@
+@media all and (orientation: portrait) {
+    .body-cover {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: antiquewhite;
+    }
+    .game-cover {
+        top: -100%;
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "css3-html5-game",
+  "version": "1.0.0",
+  "description": "Pure CSS and HTML game",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp prod",
+    "serve": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianzburlea/css3-html5-game.git"
+  },
+  "keywords": [
+    "css3",
+    "html5"
+  ],
+  "author": "Marian Zburlea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marianzburlea/css3-html5-game/issues"
+  },
+  "homepage": "https://github.com/marianzburlea/css3-html5-game#readme",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-debug": "^2.1.2",
+    "gulp-filter": "^3.0.1",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-inject": "^4.0.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rev": "^7.0.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "sassdoc": "^2.1.18"
+  }
+}

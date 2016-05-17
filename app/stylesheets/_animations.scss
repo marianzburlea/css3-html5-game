@@ -1,0 +1,85 @@
+@keyframes ani-sunny {
+    0% {transform: rotate(0)}
+    100% {transform: rotate(360deg)}
+}
+
+@keyframes ani-count-down {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: pxToVp(-600);
+    }
+}
+
+@keyframes ani-count-down-progress-bar {
+    0% {
+        width: 35vw;
+    }
+    100% {
+        width: 5vw;
+    }
+}
+
+@keyframes ani-windmill {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ani-blank {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes ani-left-to-right {
+    0% {
+        opacity: 0.8;
+        transform: translate(-50vw, 0vw);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.9;
+        transform: translate(150vw, 0vw);
+    }
+}
+
+@keyframes ani-heart-left-to-right {
+    0% {
+        transform: translate(-50vw, 0vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(150vw, 0vw);
+        opacity: 1;
+    }
+}
+
+@keyframes ani-heart-right-to-left {
+    0% {
+        transform: translate(100vw, 0vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-100vw, 0vw);
+        opacity: 1;
+    }
+}
+
+@keyframes ani-up-and-down {
+    0% {
+        transform: translate(0px, -15px);
+    }
+    100% {
+        transform: translate(0px, 10px);
+    }
+}

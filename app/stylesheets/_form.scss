@@ -1,0 +1,35 @@
+.game-form {
+    width: 100%;
+}
+
+.game-form-control-submit,
+.game-form-control {
+    display: none;
+}
+
+.game-form-control-submit:active {
+    background-color: #5890ad;
+}
+
+.game-form-control {
+    width: 100%;
+    &:valid + .game-form-control {
+        display: inline-block;
+        &:valid + .game-form-control-submit {
+            display: inline-block;
+        }
+    }
+    &:checked {
+        display: inline-block;
+    }
+    &:invalid {
+        background-color: orangered;
+    }
+}
+
+.game-form-start {
+    &:checked + .game-form-control {
+        //&:not(:checked) + .game-form-control {
+        display: block;
+    }
+}

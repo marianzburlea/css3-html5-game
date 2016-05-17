@@ -1,0 +1,78 @@
+// Game cloud
+.game-cloud-wraper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@mixin generate-cloud() {
+    border-radius: 50%;
+    background: $white;
+    border: 5px solid rgba(255, 255, 255, .5);
+    animation: ani-left-to-right;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    -webkit-filter: blur(2px);
+}
+
+.ani-up-and-down {
+    animation: ani-up-and-down 5s infinite linear;
+}
+
+.ani-left-to-right {
+    animation: ani-left-to-right 2s infinite linear;
+}
+
+@for $i from 1 through 5 {
+    .game-cloud-size-#{$i} {
+        width: #{pxToVp(100 - ($i * 10))};
+        height: #{pxToVp(100 - ($i * 10))};
+    }
+}
+
+.game-cloud-sin {
+    animation: ani-up-and-down 2s infinite linear alternate;
+    &:nth-child(1) > .game-cloud {
+        animation-duration: 7s;
+        animation-delay: 2s;
+    }
+    &:nth-child(2) > .game-cloud {
+        animation-duration: 9s;
+        animation-delay: 4s;
+    }
+    &:nth-child(3) > .game-cloud {
+        animation-duration: 13s;
+        animation-delay: 5s;
+    }
+    &:nth-child(4) > .game-cloud {
+        animation-duration: 17s;
+        animation-delay: 6s;
+    }
+    &:nth-child(5) > .game-cloud {
+        animation-duration: 23s;
+        animation-delay: 7s;
+    }
+}
+
+.game-cloud {
+    @include generate-cloud();
+}
+
+.game-cloud {
+    border-radius: 50%;
+    background: $white;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    animation: ani-left-to-right;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    box-shadow: $white 65px -15px 0 -5px,
+    $white 25px -25px,
+    $white 30px 10px,
+    $white 60px 15px 0 -10px,
+    $white 85px 5px 0 -5px;
+}
