@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Luckiest+Guy);
+
+@import "stylesheets/variables";
+@import "stylesheets/utility";
+
+@import "stylesheets/animations";
+@import "stylesheets/body";
+@import "stylesheets/media";
+@import "stylesheets/form";
+@import "stylesheets/clouds";
+@import "stylesheets/sun";
+@import "stylesheets/titles";
+@import "stylesheets/count-down";
+@import "stylesheets/heart";
+@import "stylesheets/game";
+@import "stylesheets/rocket";
+@import "stylesheets/windmill";
+@import "stylesheets/moon";
+@import 'stylesheets/media';
+
+/**
+ * Hidden for dev
+ */
+.restart {
+    position: absolute;
+    bottom: pxToVp(25);
+    width: pxToVp(80);
+    text-align: center;
+    left: calc(50% - 40px);
+    border-radius: pxToVp(10);
+    border: pxToVp(2) solid $moon;
+    padding: pxToVp(3) pxToVp(6);
+    color: $rocket-head;
+    background-color: $white;
+    text-decoration: none;
+}
+
+.titles {
+    display: none;
+}
+

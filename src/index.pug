@@ -1,0 +1,118 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title CSS3 and HTML5 Game!
+    meta(
+      name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    )
+    link(rel="stylesheet", href="style.css")
+  body
+    .game-wrapper
+      .game-day
+        .game-sky
+        .game-ground
+        .sun
+        .game-cloud-wraper
+          .game-cloud-sin
+            .game-cloud.game-cloud-size-1
+          .game-cloud-sin
+            .game-cloud.game-cloud-size-2
+          .game-cloud-sin
+            .game-cloud.game-cloud-size-3
+          .game-cloud-sin
+            .game-cloud.game-cloud-size-4
+          .game-cloud-sin
+            .game-cloud.game-cloud-size-5
+      .titles
+        .titlecontent
+          | In a not too far future,
+          | human kind learned to abide
+          | with nature rules in order to
+          | escape their doom.
+          | Just like the clouds and wind
+          | which capture sun energy
+          | and transform it into motion,
+          | we can capture wind motion
+          | or, even better, sun light.
+      .game-content
+        .game-welcome-message
+          .game-welcome-message-title
+            p.game-welcome-message-item Welcome to
+            h1.game-welcome-message-item
+              | Share love
+            h2.game-welcome-message-item
+              i around
+              |  the world
+            ul.game-welcome-message-item
+              li This is a pure CSS3 and HTML 5 game
+              li Yes, that's true, no JavaScript !!!
+              li Press Start to begin the fun journey!
+            form.game-form(action='#')
+              label(for='start') Start
+              input#start.game-form-start(type='checkbox')
+              input.game-form-control(type='text', placeholder='Name', pattern='([a-zA-Z]){4,}', required='')
+              input.game-form-control(type='email', placeholder='email', required='')
+              label.game-form-control-submit(for='play-game') Play
+              input#play-game.game-form-control(type='checkbox')
+        .count-down
+          .count-down-progress-bar
+          .count-down-clock-wrapper
+            .count-down-clock-thick
+            .count-down-clock-thick
+            .count-down-clock-thin
+            .count-down-clock-thin
+            .count-down-clock-thin
+            .count-down-clock-thin
+          .count-down-timer
+            .count-down-timer-text
+        .rocket
+          .rocket-body
+          .rocket-ends
+          .rocket-window
+          .rocket-fins
+        .windmill
+          .windmill-body
+          .windmill-head
+            .windmill-propeller
+            .windmill-propeller
+            .windmill-propeller
+            .windmill-cap
+        .moon-wrapper
+          .moon
+            .moon-crater-1
+            .moon-crater-2
+            .moon-crater-3
+        .count-down-right
+          input#heart-score-1.input-score(type='checkbox')
+          .heart
+            label.heart-score(for='heart-score-1')
+          input#heart-score-2.input-score(type='checkbox')
+          .heart
+            label.heart-score(for='heart-score-2')
+          input#heart-score-3.input-score(type='checkbox')
+          .heart
+            label.heart-score(for='heart-score-3')
+          input#heart-score-4.input-score(type='checkbox')
+          .heart
+            label.heart-score(for='heart-score-4')
+          input#heart-score-5.input-score(type='checkbox')
+          .heart
+            label.heart-score(for='heart-score-5')
+          input#heart-score-6.input-score(type='checkbox')
+          .heart
+            label.heart-score(for='heart-score-6')
+          input#heart-score-7.input-score(type='checkbox')
+          .heart
+            label.heart-score(for='heart-score-7')
+          input#heart-score-8.input-score(type='checkbox')
+          .heart
+            label.heart-score(for='heart-score-8')
+          .count-down-timer
+            .count-down-score-text
+        a.restart(href='/') Restart!
+    .game-cover
+      hgroup
+        h1 Please use the phone
+        h2 in portrait mode
